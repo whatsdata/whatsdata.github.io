@@ -3,7 +3,6 @@ layout : single
 title : '[Paper Review] Probabilistic Symmetry and Invariant Neural Networks'
 categories : DLtheory
 
-toc : true
 date: 2022-12-01
 last_modified_at : 2022-12-08
 
