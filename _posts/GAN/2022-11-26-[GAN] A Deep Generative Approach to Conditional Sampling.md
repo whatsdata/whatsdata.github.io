@@ -340,7 +340,7 @@ $$
 
 
 
-<B>definition) <i> Fenchel conjugate of f  </i> </b>
+<B>definition) <i> Fenchel conjugate of f  </i> </b>
 $$
 f^*(t) = \underset{x \in \mathbb{R}}{sup} \{ tx - f(x) \} , t \in \mathbb{R}
 $$
@@ -710,7 +710,7 @@ $$
  <hr>
 
 
-<b> Lemma B.4.</b>  if  $\xi _i ~~,i = 1, \cdots ,m $ <i>are $m$ finite linear combinations of Rademacher variables $\epsilon_j, ~~j = 1, \cdots ,J$. Then</i>,
+<b> Lemma B.4.</b>  if  $\xi _i ~~,i = 1, \cdots ,m $ <i>are $m$ finite linear combinations of Rademacher variables $\epsilon_j, ~~j = 1, \cdots ,J$. Then</i>,
 $$
 \mathbb{E}_{\epsilon_j , j=1, \cdots,J} \underset{1\leq i \leq m}{max} \vert \xi_i \vert \quad\leq \quad C  (log \, m )^{\frac{1}{2}} \underset{1 \leq i \leq m}{max} (\mathbb{E} \xi_i^2 )^{\frac{1}{2}}
 $$
@@ -720,7 +720,7 @@ $$
 
 <br>
 
-<b> proof) </b> This result follows from Corollary 3.2.6 and inequality 4.3.1 in De la Pena and Gine (2012) with $\Phi(x) = exp(x^2)$ 
+<b> proof) </b> This result follows from Corollary 3.2.6 and inequality 4.3.1 in De la Pena and Gine (2012) with $\Phi(x) = exp(x^2)$ 
 
 
 
@@ -916,7 +916,7 @@ $$
 $$
 e_{n,1}((G,D), (\tilde{G}, \tilde{D})) = \frac{1}{n} \mathbb{E}_\epsilon \left[ \sum_{i=1}^n \left\vert\epsilon_i (b(G,D;S_i) - b(\tilde{G}, \tilde{D}; S_i)) \right\vert\right]
 $$
-또한, 가정 A1, A2에 의해 $b(G,D;S_i)$ 가 어떤 수에 의해 bounded 되므로, $b(G,D;S_i) < C_4$라 하고, <b> Lemma B.4. </b>와 함께 적용 시 다음 결과를 얻을 수 있다. 
+또한, 가정 A1, A2에 의해 $b(G,D;S_i)$ 가 어떤 수에 의해 bounded 되므로, $b(G,D;S_i) < C_4$라 하고, <b> Lemma B.4. </b>와 함께 적용 시 다음 결과를 얻을 수 있다. 
 $$
 \begin{align}
 
