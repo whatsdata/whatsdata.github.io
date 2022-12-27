@@ -4,8 +4,8 @@ main:
     url: "/"
   - title: "Category"
     url: "/categories/"
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Tag"
+    url: /tags/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
