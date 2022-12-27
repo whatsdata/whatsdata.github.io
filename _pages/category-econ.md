@@ -1,7 +1,7 @@
 ---
 title: "Economics"
 layout: archive
-permalink: categories/econ
+permalink: econ
 author_profile: true
 sidebar_main: false
 sidebar_main_econ: true
