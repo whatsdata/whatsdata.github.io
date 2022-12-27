@@ -1,0 +1,124 @@
+<!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">Deep Learning</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+            <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DLtheory" %}
+                        <li><a href="/categories/DLtheory" class="">Deep Learning Theory ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+
+                {% for category in site.categories %}
+                    {% if category[0] == "GAN" %}
+                        <li><a href="/categories/GAN" class="">GAN ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "GNN" %}
+                        <li><a href="/categories/GNN" class="">GNN ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CV" %}
+                        <li><a href="/categories/CV" class="">CV ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+                        <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "EECS498" %}
+                        <li><a href="/categories/EECS498" class="">EECS498 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "torch" %}
+                        <li><a href="/categories/torch" class="">torch ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Machine Learning</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Ensemble" %}
+                        <li><a href="/categories/Ensemble" class="">Ensemble ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "XAI" %}
+                        <li><a href="/categories/XAI" class="">XAI ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Statistics</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Econometrics" %}
+                        <li><a href="/categories/Econometrics" class="">Econometrics ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "HighDimensionalStatistics" %}
+                        <li><a href="/categories/HighDimensionalStatistics" class="">High Dimensional Statistics({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "LinearModel" %}
+                        <li><a href="/categories/LinearModel" class="">Linear Model ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %} 
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "SEM" %}
+                        <li><a href="/categories/SEM" class="">SEM ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "stock" %}
+                        <li><a href="/categories/stock" class="">stock ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "etc" %}
+                        <li><a href="/categories/etc" class="">etc ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+    
+      </li>
+  </ul>
+</nav>
