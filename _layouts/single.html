@@ -1,7 +1,7 @@
 ---
 layout: default
-classes: wide
 ---
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -48,15 +48,7 @@ classes: wide
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      
-        <p></p>
-        <h4 class="page__meta-title"><span style="font-family:'Coming Soon'; color:#fcd14f;">{{ page.categories[0] }}</span> <span style="font-family:'Cafe24Oneprettynight';">카테고리 내 다른 글 보러가기</span></h4>
-        {% include post_pagination.html %}
-        <p></p>
-      
       </section>
-      
-      
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
@@ -98,6 +90,3 @@ classes: wide
     </div>
   {% endif %}
 </div>
-
-
-
