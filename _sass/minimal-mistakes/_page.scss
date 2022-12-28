@@ -378,8 +378,8 @@ body {
 
 .taxonomy__section {
   margin-bottom: 2em;
-  margin-top: 1em;
   padding-bottom: 1em;
+  line-height: 5;
 
   &:not(:last-child) {
     border-bottom: solid 1px $border-color;
