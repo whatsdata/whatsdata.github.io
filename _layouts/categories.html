@@ -5,7 +5,7 @@ layout: archive
 {{ content }}
 
 {% assign categories_max = 0 %}
-{% for category in site.categories %}
+{% for category in site.categories[~GAN] %}
   {% if category[1].size > categories_max %}
     {% assign categories_max = category[1].size %}
   {% endif %}
@@ -13,7 +13,7 @@ layout: archive
 
 <ul class="taxonomy__index">
   {% for i in (1..categories_max) reversed %}
-    {% for category in site.categories %}
+    {% for category in site.categories[~GAN] %}
       {% if category[1].size == i %}
         <li>
           <a href="#{{ category[0] | slugify }}">
@@ -26,7 +26,7 @@ layout: archive
 </ul>
 
 {% for i in (1..categories_max) reversed %}
-  {% for category in site.categories %}
+  {% for category in site.categories[~GAN] %}
     {% if category[1].size == i %}
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
