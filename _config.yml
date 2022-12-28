@@ -275,7 +275,13 @@ compress_html:
   blanklines: true
   ignore:
     envs: 
-
+    
+# Collections
+collections:
+  econs:
+    output: true
+    permalink: /:collection/:path/
+    
 # Defaults
 defaults:
   # _posts
@@ -289,8 +295,20 @@ defaults:
       comments: true
       share: true
       related: true
-
-
       mathjax: true
       sidebar_main: true
+      
+    # _econs
+  - scope:
+      path: ""
+      type: econs
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+      mathjax: true
+      sidebar_main_econ: true
 
