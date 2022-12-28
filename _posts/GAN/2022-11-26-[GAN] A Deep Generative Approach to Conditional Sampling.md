@@ -1,9 +1,7 @@
 ---
 layout : single
 title : '[Paper Review] A Deep Generative Approach to Conditional Sampling'
-categories : 
-- stat
-- GAN
+categories : GAN
 toc : true
 
 date: 2022-11-26
