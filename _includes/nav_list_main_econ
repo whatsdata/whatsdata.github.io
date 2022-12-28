@@ -1,6 +1,6 @@
 <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
 
-{% assign sum = site.econs | size %}
+{% assign sum = site.tags.econs | size %}
 
 <nav class="nav__list">
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
@@ -32,7 +32,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
+    
       </li>
   </ul>
 </nav>
