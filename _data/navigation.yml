@@ -2,6 +2,10 @@
 main:
   - title: "Home"
     url: "/"
+  - title: "Stat"
+    url: "/stat/"
+  - title: "Econ"
+    url: "/econ/"
   - title: "Category"
     url: "/categories/"
   - title: "Tag"
