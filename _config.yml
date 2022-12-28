@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "mint" # "mint","air", "aqua", "contrast", "dark", "d
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science"
+title                    : "Data Science and Economics"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Insik Cho"
-description              : "An amazing website."
+description              : "In progess."
 url                      : "https://whatsdata.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "whatsdata/whatsdata.github.io"
@@ -104,9 +104,9 @@ analytics:
 author:
   name             : "Insik Cho"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "In progress"
+  location         : "Seoul, Korea"
+  email            : "whats1101@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -130,7 +130,7 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GirHub"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/whatsdata"
     - label: "Facebook"
@@ -147,7 +147,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url: "https://www.instagram.com/cho.choooo/"
 
 
 # Reading Files
