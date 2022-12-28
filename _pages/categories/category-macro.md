@@ -6,5 +6,5 @@ author_profile: true
 sidebar_main_econ: true
 ---
 
-{% assign posts = site.econs.macro %}
+{% assign posts = site.categories.macro %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

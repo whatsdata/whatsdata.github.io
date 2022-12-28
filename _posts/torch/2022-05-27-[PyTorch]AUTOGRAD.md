@@ -4,7 +4,7 @@ categories : 'torch'
 toc : true
 tag: [ 'stat', 'pytorch']
 sidebar_main : true
-date: 2021-10-01
+date: 2022-01-05
 
 ---
 

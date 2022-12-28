@@ -4,7 +4,7 @@ categories : 'torch'
 tag: [ 'stat', 'pytorch']
 sidebar_main : true
 toc : true
-date: 2021-10-03
+date: 2022-01-05
 ---
 
 ImageFolder는  PyTorch에서 제공하는 라이브러리로, 로컬에 저장된 데이터셋을 학습에 사용할 때 사용된다.

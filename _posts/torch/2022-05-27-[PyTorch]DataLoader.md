@@ -4,7 +4,7 @@ categories : 'torch'
 tag: [ 'stat', 'pytorch']
 sidebar_main : true
 toc : true
-date: 2021-10-02
+date: 2022-01-05
 ---
 
 PyTorch의 data setting에 관한 정리입니다.
