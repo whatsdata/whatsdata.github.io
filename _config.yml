@@ -133,6 +133,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/whatsdata"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/cho.choooo/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -145,9 +148,7 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/cho.choooo/"
+
 
 
 # Reading Files
