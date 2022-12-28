@@ -296,19 +296,7 @@ defaults:
       share: true
       related: true
       mathjax: true
-      sidebar_main: true
+
       
-    # _econs
-  - scope:
-      path: ""
-      type: econs
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: true
-      share: true
-      related: true
-      mathjax: true
-      sidebar_main_econ: true
+
 
