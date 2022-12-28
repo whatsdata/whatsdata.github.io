@@ -2,7 +2,8 @@
 layout : single
 title : '[Paper Review] Wasserstein GAN'
 categories : GAN
-
+tag: [ 'stat']
+sidebar_main : true
 toc : true
 date: 2022-11-08
 last_modified_at : 2022-11-08

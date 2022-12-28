@@ -1,7 +1,8 @@
 ---
 title: '[PyTorch] ImageFolder'
 categories : 'torch'
-
+tag: [ 'stat', 'pytorch']
+sidebar_main : true
 toc : true
 date: 2021-10-03
 ---

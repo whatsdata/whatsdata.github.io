@@ -2,8 +2,8 @@
 layout : single
 title : '[Analysis] Uniform convergence'
 categories : 'Mathematics'
-
-tag : ['Analysis']
+sidebar_main : true
+tag : ['stat', 'Analysis']
 date : 2022-12-19
 last_modified_at : 2022-12-19
 ---

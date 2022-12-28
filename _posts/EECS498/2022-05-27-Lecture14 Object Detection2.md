@@ -1,9 +1,10 @@
 ---
 title : '[EECS498]Lecture14: Object detection2'
 layout : single
-toc : true
+tag: [ 'stat', 'CV']
+sidebar_main : true
 categories: 'EECS498'
-tag: [ 'CV']
+toc : true
 date : 2022-05-25
 last_modified_at : 2022-05-27
 ---

@@ -1,7 +1,8 @@
 ---
 title: '[Paper Review] Graph-Based Learning for Stock Movement Prediction with Textual and Relational Data'
 categories : 'stock'
-tag : ['etc', 'stock', 'application']
+sidebar_main : true
+tag : ['stat', 'etc', 'stock', 'application']
 toc : true
 date: 2022-04-20
 last_modified_at : 2022-05-17

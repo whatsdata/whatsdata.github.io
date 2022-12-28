@@ -2,7 +2,8 @@
 title : '[EECS498]Lecture08: CNN Architecture'
 layout : single
 categories: 'EECS498'
-tag: [ 'CV']
+tag: [ 'stat', 'CV']
+sidebar_main : true
 toc : true
 date : 2022-04-10
 last_modified_at : 2022-05-25

@@ -2,7 +2,8 @@
 layout : single
 title : '[GAN] Gumbel Softmax'
 categories : GAN
-
+tag: [ 'stat']
+sidebar_main : true
 toc : true
 date: 2022-10-12
 last_modified_at : 2022-10-12

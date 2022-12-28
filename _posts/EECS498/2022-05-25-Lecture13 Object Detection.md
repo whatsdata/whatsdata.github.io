@@ -4,7 +4,8 @@ layout : single
 
 toc : true
 categories: 'EECS498'
-tag: ['CV']
+tag: [ 'stat', 'CV']
+sidebar_main : true
 date : 2022-05-25
 last_modified_at : 2022-05-27
 ---

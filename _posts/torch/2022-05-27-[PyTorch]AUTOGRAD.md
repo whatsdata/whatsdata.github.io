@@ -2,6 +2,8 @@
 title: '[PyTorch] 자동미분(AUTOGRAD)'
 categories : 'torch'
 toc : true
+tag: [ 'stat', 'pytorch']
+sidebar_main : true
 date: 2021-10-01
 
 ---

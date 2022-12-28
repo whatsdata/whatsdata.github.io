@@ -2,8 +2,8 @@
 layout : single
 title : '[High Dimensional Statistics] Linear Regression'
 categories : 'HighDimensionalStatistics'
-
-tag : ['Linear Regression']
+sidebar_main : true
+tag : ['stat', 'Linear Regression']
 toc : true
 date: 2022-11-26
 last_modified_at : 2022-12-15

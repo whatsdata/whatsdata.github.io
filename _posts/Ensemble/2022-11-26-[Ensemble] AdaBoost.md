@@ -2,7 +2,8 @@
 layout : single
 title : '[Ensemble] Intro to Boosting & AdaBoost'
 categories : Ensemble
-
+tag: [ 'stat']
+sidebar_main : true
 toc : true
 date: 2022-04-26
 last_modified_at : 2022-04-26

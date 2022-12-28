@@ -2,8 +2,8 @@
 layout : single
 title : '[High Dimensional Statistics] Matrix Covariance Estimation'
 categories : 'HighDimensionalStatistics'
-
-tag : ['Inequalities']
+sidebar_main : true
+tag : ['stat', 'Inequalities']
 toc : true
 date: 2022-09-25
 last_modified_at : 2022-10-25

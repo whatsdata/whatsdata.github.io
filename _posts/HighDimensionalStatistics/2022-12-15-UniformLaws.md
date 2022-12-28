@@ -2,8 +2,8 @@
 layout : single
 title : '[High Dimensional Statistics] Uniform Laws of large numbers'
 categories : 'HighDimensionalStatistics'
-
-tag : ['Asymptotic']
+sidebar_main : true
+tag : ['stat','Asymptotic']
 toc : true
 date : 2022-11-27
 last_modified_at : 2022-12-22

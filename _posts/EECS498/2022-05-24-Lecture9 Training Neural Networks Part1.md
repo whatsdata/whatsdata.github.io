@@ -5,7 +5,8 @@ layout : single
 last_modified_at: 2020-05-24
 toc : true
 categories: 'EECS498'
-tag: [  'CV']
+tag: [ 'stat', 'CV']
+sidebar_main : true
 ---
 
 

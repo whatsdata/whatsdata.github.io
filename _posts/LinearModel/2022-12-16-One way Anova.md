@@ -2,8 +2,8 @@
 layout : single
 title : '[Linear Model] One-way ANOVA'
 categories : 'LinearModel'
-
-tag : ['Linear Regression', 'ANOVA']
+sidebar_main : true
+tag : ['stat','Linear Regression', 'ANOVA']
 toc : true
 date: 2022-11-25
 last_modified_at : 2022-12-16
@@ -102,7 +102,7 @@ $$
 $$
 
 
-,where $\gamma = \frac{\vert \vert M_\alpha X \beta \vert \vert^2}{2 \sigma^2} $, which is 0 under $H_0$
+,where $\gamma = \frac{\vert \vert M_\alpha X \beta \vert \vert^2}{2 \sigma^2} $, which is 0 under $H_0$
 
 <Br>
 

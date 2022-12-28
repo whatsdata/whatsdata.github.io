@@ -2,7 +2,8 @@
 layout : single
 title : '[Paper Review] Reconciling modern machine-learning practice and the classical bias–variance trade-off'
 categories : Ensemble
-
+tag: [ 'stat']
+sidebar_main : true
 toc : true
 date: 2022-09-27
 last_modified_at : 2022-09-27

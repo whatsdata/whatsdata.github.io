@@ -2,8 +2,8 @@
 layout : single
 title : '[High Dimensional Statistics] Metric Entropy'
 categories : 'HighDimensionalStatistics'
-
-tag : ['Metric']
+sidebar_main : true
+tag : ['stat', 'Metric']
 toc : true
 date: 2022-10-15
 last_modified_at : 2022-11-25
