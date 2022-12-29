@@ -155,9 +155,20 @@ $$
 
 
 
-<B> <i> proof) </i> </b>
+
+
+<details>
+    <summary> <b>proof </b></summary>
+
+​    
 
 저자가 참고한 원문 논문에서는 $\eta \sim N(\mathbf{0}, \mathbf{I}_m)$이 아니라 $u \sim Uniform [0,1]$인 경우의 noise outsourcing lemma를 따르고 있다. (Lemma 3.1 in Austin (2015))
+
+
+
+<br>
+
+<br>
 
 <br>
 
@@ -171,6 +182,10 @@ $$
 
 <br>
 
+<br>
+
+<br>
+
 
 
 마찬가지로, 만일 $u$와 $\eta$가 독립이라면, 
@@ -178,6 +193,12 @@ $$
 u = G_2(\eta) ~~almost ~~surely
 $$
 를 만족하는 measurable function $G_2 : \mathbb{R}^m \rightarrow [0,1]$이 존재한다. 
+
+
+
+<br>
+
+<br>
 
 <br>
 
@@ -191,7 +212,7 @@ G(\eta,x) = G_1 (G_2(\eta),x), ~~(\eta, x) \in  \mathbb{R}^m \times \mathcal{X}
 $$
 인 $G$를 구할 수 있다. 
 
-
+</details>
 
 ---
 
@@ -566,7 +587,12 @@ $$
 
 ---
 
-<b> <i>1.  proof Start </i> </b>
+
+
+<details>
+    <summary> <b>proof1</b></summary>
+
+​    
 
 
 
@@ -669,13 +695,15 @@ $$
 
 
 
-
+</details>
 
 ---
 
 
 
-<b> <i> 2. More lemmas for proof </i> </b>
+<details>
+    <summary><b> more lemmas for proof </b></summary>
+
 
 
 
@@ -684,6 +712,8 @@ $$
 \mathbb{E}_{\epsilon_j , j=1, \cdots,J} \underset{1\leq i \leq m}{max} \vert \xi_i \vert \quad\leq \quad C  (log \, m )^{\frac{1}{2}} \underset{1 \leq i \leq m}{max} (\mathbb{E} \xi_i^2 )^{\frac{1}{2}}
 $$
 <i>for some constant</i> $C >0$
+
+<br>
 
 <br>
 
@@ -701,6 +731,8 @@ $$
 $$
 <i> where, $\omega_f^E (t)$ is the modulus of continuity of $f$ satisfying $\omega_f^E (t) \rightarrow 0$ as $t \rightarrow 0^+$</i>
 
+<Br>
+
 <br>
 
 <b> proof </b> can be found on Theorem 4.3. in Shen et al.(2020)
@@ -713,11 +745,15 @@ $$
 
 
 
+</details>
+
 ---
 
-<B><i> 3. proof of error 3 </i></b>
 
 
+<details>
+
+<summary><b>proof of error3 </b></summary>
 
 <b> Lemma B.1. </b> 
 $$
@@ -798,7 +834,7 @@ $$
 $$
 에 수렴한다.
 
-
+</details>
 
 
 
@@ -806,9 +842,8 @@ $$
 
 
 
-<B><i> 4. Proof of error2 </i> </b>
-
-
+<details>
+<summary><B>proof of error2</B></summary>
 
  <B> Lemma B.2. </B> <bR>
 $$
@@ -931,15 +966,15 @@ $$
 $$
 \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert   \leq 2 \left(2 \delta + C_9 \frac{1}{\sqrt{n}}\left[ \mathcal{H}\mathcal{S} log \,\mathcal{S} log \frac{\mathcal{B} n }{\delta \mathcal{H}\mathcal{S} log \,\mathcal{S}} + \mathcal{\tilde{H}}\mathcal{\tilde{S}} log \,\mathcal{\tilde{S}} log \frac{\mathcal{\tilde{B}} n }{\delta \mathcal{\tilde{H}} \mathcal{\tilde{S}} log \,\mathcal{\tilde{S}}} \right]^{1/2} \right) \rightarrow 0 \tag{D.7.}
 $$
-
+</details>
 
 ---
 
 
 
-<b><i> 5. proof of error1 </i> </b>
+<details>
 
-
+<summary> <b> proof of error1 </b></summary>
 
 <b> Lemma B.3. </b><Br>
 $$
@@ -997,6 +1032,8 @@ $$
 0<\underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D) \leq \mathcal{L}(\hat{G},D_{\hat{G}} ) - \mathcal{L} (\hat{G} - \hat{D}_\phi) \rightarrow 0
 $$
 가 성립한다.
+
+</details>
 
 
 
