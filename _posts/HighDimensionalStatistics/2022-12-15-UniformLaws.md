@@ -25,14 +25,10 @@ last_modified_at : 2022-12-22
 
 
 
-<details>
-    <summary> <b> Summary about Convergence</b></summary>
-
+<b> Summary about convergence </b>
 
 
 - <b>  Pointwise Convergence</b> 
-
-<Br>
 
 <Br>
 
@@ -53,13 +49,9 @@ The sequence of functions are said to <b> converge pointwise </b> to the functio
 
 i.e. <i> for each $x\in A$ and $\epsilon >0$, $\exists L = L(x, \epsilon)$  such that $d(f_n (x), (x)) \leq \epsilon , \quad \forall n \geq L$  </i>
 
-<br>
-
 <Br>
 
 - <b> Unform Convergence</b>
-
-<Br>
 
 <Br>
 
@@ -72,8 +64,6 @@ $$
 &f\,\,\, : A \longrightarrow N
 \end{align}
 $$
-<Br>
-
 The sequence of functions are said to <b> converge pointwise </b> to the function $f$, if <i> for each $x \in A$, $f_n (x) \longrightarrow f(x)$,  </i>
 
 <br>
@@ -82,22 +72,16 @@ i.e. <i> for each $x\in A$ and $\epsilon >0$, $\exists L = L( \epsilon)$  such  
 
 <br>
 
-which is same with
+,which is same with
 
 <br>
 $$
 \underset{x \in A} {sup} \quad d(f_n (x) , (x)) < \epsilon, \quad \forall n \geq L
 $$
 
-<br>
-
 - <b>some relations </b>
 
   <Br>
-
-  <Br>
-  
-  
 
 <b>1. The derivatives of a pointwise convergent sequence of functions do not have to converge. </b>
 
@@ -109,21 +93,15 @@ consider $X = \mathbb{R} $  and  $f_n (x) = \frac{1}{n} sin(n^2 x)$ . Then,
 $$
 \underset{n \rightarrow \infty}{lim} f_n (x) = 0
 $$
-<br>
-
 So, the pointwise limit function is $f(x)=0$; the sequence of functions converges to 0. What about the derivatives of the sequence?
 
 <br>
 $$
 f_n '(x) = n cos (n^2 x)
 $$
- <br>
-
 and for most $x \in \mathbb{R}$, above derivative is unbounded, which means that it does not converge. 
 
 
-
-<br>
 
 <br>
 
@@ -137,8 +115,6 @@ Consider $X= [0,1],$ and  $f_n (x) = \frac{2 n^2 x}{(1+n^2 x^2)^2}.$ Then,
 $$
 lim_{n \rightarrow =\infty} f_n (x) = 0
 $$
-<br>
-
 However, the integrals are
 
 
@@ -147,11 +123,7 @@ However, the integrals are
 $$
 \int^1_0 \frac{2 n^2 x dx}{(1+n^2 x^2)^2} \overset{u = 1+ n^2 x^2}{=} \int ^{1+n^2}_{1 }\frac{du}{u^2} = 1 - \frac{1}{1+n^2}
 $$
-<br>
-
 Therfore, even thought $lim_{n \rightarrow =\infty} f_n (x) = 0$ for all $x \in X$, the intergral is 1 as $n \rightarrow \infty$
-
-<br>
 
 <br>
 
@@ -171,8 +143,6 @@ $$
 It satisfies pointwise convegence, but limit is not continuous
 
 <Br>
-
-<br>
 
 <b> 4. The uniform convergence implies pointwise convergence, but not the other way around. </b> 
 
@@ -194,7 +164,7 @@ contradicting our assumption.
 
 
 
- </details>
+
 
 ## 1. Motivation
 
