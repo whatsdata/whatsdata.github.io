@@ -155,20 +155,9 @@ $$
 
 
 
-
-
-<details>
-    <summary> <b>proof </b></summary>
-
-​    
+<B> <i> proof) </i> </b>
 
 저자가 참고한 원문 논문에서는 $\eta \sim N(\mathbf{0}, \mathbf{I}_m)$이 아니라 $u \sim Uniform [0,1]$인 경우의 noise outsourcing lemma를 따르고 있다. (Lemma 3.1 in Austin (2015))
-
-
-
-<br>
-
-<br>
 
 <br>
 
@@ -182,10 +171,6 @@ $$
 
 <br>
 
-<br>
-
-<br>
-
 
 
 마찬가지로, 만일 $u$와 $\eta$가 독립이라면, 
@@ -193,12 +178,6 @@ $$
 u = G_2(\eta) ~~almost ~~surely
 $$
 를 만족하는 measurable function $G_2 : \mathbb{R}^m \rightarrow [0,1]$이 존재한다. 
-
-
-
-<br>
-
-<br>
 
 <br>
 
@@ -212,7 +191,7 @@ G(\eta,x) = G_1 (G_2(\eta),x), ~~(\eta, x) \in  \mathbb{R}^m \times \mathcal{X}
 $$
 인 $G$를 구할 수 있다. 
 
-</details>
+
 
 ---
 
@@ -587,12 +566,7 @@ $$
 
 ---
 
-
-
-<details>
-    <summary> <b>proof1</b></summary>
-
-​    
+<b> <i>1.  proof Start </i> </b>
 
 
 
@@ -695,16 +669,14 @@ $$
 
 
 
-</details>
+
 
 ---
 
 
 
-<details>
-    <summary><b> more lemmas for proof </b></summary>
+<b> <i> 2. More lemmas for proof </i> </b>
 
- <hr>
 
 
 <b> Lemma B.4.</b>  if  $\xi _i ~~,i = 1, \cdots ,m $ <i>are $m$ finite linear combinations of Rademacher variables $\epsilon_j, ~~j = 1, \cdots ,J$. Then</i>,
@@ -715,15 +687,12 @@ $$
 
 <br>
 
-<br>
-
 <b> proof) </b> This result follows from Corollary 3.2.6 and inequality 4.3.1 in De la Pena and Gine (2012) with $\Phi(x) = exp(x^2)$ 
 
 
 
 <hr>
 <Br>
-
 <Br>
 
 <B>Lemma B.5.</b> <i>Let $f$ be a uniformly continuous function defined on $E \in [-R,R]^d$. For arbitrary $L \in \mathbb{N}^+$ and $N \in \mathbb{N}^+$, there exists a function $ReLU$ network $f_\phi$ with width $3^{d+3} max\{d  \lfloor{N^{1/d} }\rfloor, N+1 \} $ and depth $12L + 14 + 2d$ such that </i>
@@ -731,8 +700,6 @@ $$
 \vert \vert f - f_\phi \vert \vert_{L^\infty (E)} \leq 19 \sqrt{d} \omega_f ^E (2RN^{-2/d} L^{-2/d})
 $$
 <i> where, $\omega_f^E (t)$ is the modulus of continuity of $f$ satisfying $\omega_f^E (t) \rightarrow 0$ as $t \rightarrow 0^+$</i>
-
-<Br>
 
 <br>
 
@@ -746,15 +713,11 @@ $$
 
 
 
-</details>
-
 ---
 
+<B><i> 3. proof of error 3 </i></b>
 
 
-<details>
-
-<summary><b>proof of error3 </b></summary>
 
 <b> Lemma B.1. </b> 
 $$
@@ -835,7 +798,7 @@ $$
 $$
 에 수렴한다.
 
-</details>
+
 
 
 
@@ -843,11 +806,11 @@ $$
 
 
 
-<details>
+<B><i> 4. Proof of error2 </i> </b>
 
-<summary><B>proof of error2</B></summary>
 
- <B> Lemma B.2. </B> <bR>
+
+ <B> Lemma B.2. </B> <bR>
 $$
 \begin{align}
 \triangle_2 \equiv \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert \leq \mathcal{O} (n^{\frac{-2}{2+d+m}} +n^{\frac{-2}{2+d+q}}  ) 
@@ -968,15 +931,15 @@ $$
 $$
 \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert   \leq 2 \left(2 \delta + C_9 \frac{1}{\sqrt{n}}\left[ \mathcal{H}\mathcal{S} log \,\mathcal{S} log \frac{\mathcal{B} n }{\delta \mathcal{H}\mathcal{S} log \,\mathcal{S}} + \mathcal{\tilde{H}}\mathcal{\tilde{S}} log \,\mathcal{\tilde{S}} log \frac{\mathcal{\tilde{B}} n }{\delta \mathcal{\tilde{H}} \mathcal{\tilde{S}} log \,\mathcal{\tilde{S}}} \right]^{1/2} \right) \rightarrow 0 \tag{D.7.}
 $$
-</details>
+
 
 ---
 
 
 
-<details>
+<b><i> 5. proof of error1 </i> </b>
 
-<summary> <b> proof of error1 </b></summary>
+
 
 <b> Lemma B.3. </b><Br>
 $$
@@ -1034,8 +997,6 @@ $$
 0<\underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D) \leq \mathcal{L}(\hat{G},D_{\hat{G}} ) - \mathcal{L} (\hat{G} - \hat{D}_\phi) \rightarrow 0
 $$
 가 성립한다.
-
-</details>
 
 
 
