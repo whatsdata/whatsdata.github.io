@@ -110,7 +110,6 @@ $$
 \begin{align}
 
 G( \eta , x) ~\sim ~P_{Y \vert X=x} , ~~x \in \mathcal{X}
-\label{eq:first}
 \tag{1}
 
 \end{align}
@@ -139,7 +138,6 @@ $$
 \begin{align}
 
 (X,Y) = (X, G (\eta, X)) ~~Almost ~~~Surely
-\label{eq:second}
 \tag{2}
 
 \end{align}
@@ -151,7 +149,7 @@ $$
 
 
 
-- 가정에 의해, $\eta$와 $X$는 독립이므로, \eqref{eq:second} 를 만족하는 $G$는 \eqref{eq:first}도 만족한다. 
+- 가정에 의해, $\eta$와 $X$는 독립이므로, <B>(2)</B> 를 만족하는 $G$는 <b>(3)</b>도 만족한다. 
 
 <br>
 
@@ -235,13 +233,12 @@ $$
 **2.3. Generalized regression problem**
 
 - Noise outsourcing lemma가 의미하는 것은 conditional distribution estimation 문제를 generalized regression 문제로 이해할 수 있다는 점이다. 
-- \eqref{eq:first} 를 다르게 이해하면 다음과 같다.
+- <b>(1)</b> 를 다르게 이해하면 다음과 같다.
 
 $$
 \begin{align}
 
 Y \vert X=x ~\sim~G(\eta, x), ~~x\in \mathcal{X}
-\label{eq:third}
 \tag{3}
 
 \end{align}
@@ -278,7 +275,7 @@ $$
 \begin{align}
 
 (X, G(\eta, X)) \sim (X,Y)
-\label{eq:fourth}
+
 \tag{4}
 
 \end{align}
@@ -295,7 +292,7 @@ $$
 \begin{align}
 
 \tilde{g}(x) = \frac{1}{J} \sum_{j=1}^J G(\eta_j ,x) ~~and ~~
-\tilde{v}(x) = \frac{1}{J} \sum_{j=1}^J [G(\eta_j ,x) - \tilde{g}(x)]^2 \label{eq:fifth}
+\tilde{v}(x) = \frac{1}{J} \sum_{j=1}^J [G(\eta_j ,x) - \tilde{g}(x)]^2 
 \tag{5}
 
 \end{align}
@@ -321,14 +318,13 @@ $$
 $$
 \begin{align}
 
-\mathbb{D}_f (q \vert \vert p) \geq \underset{D \in \mathcal{D}}{sup} [\mathbb{E}_{Z\sim q}D(Z) - \mathbb{E}_{W \sim p} f^* (D(W))]\label{eq:B_first}
+\mathbb{D}_f (q \vert \vert p) \geq \underset{D \in \mathcal{D}}{sup} [\mathbb{E}_{Z\sim q}D(Z) - \mathbb{E}_{W \sim p} f^* (D(W))]
 \tag{B.1}
 
 
 
 \end{align}
 $$
-
 
 
 
@@ -441,7 +437,7 @@ $$
 $$
 \begin{align}
 
-\mathbb{L}(G) = \underset{D} {sup} \mathcal{L} (G,D) \label{eq:C_first}
+\mathbb{L}(G) = \underset{D} {sup} \mathcal{L} (G,D) 
 
 \tag{C.1}
 
@@ -455,7 +451,7 @@ $$
 $$
 \begin{align}
 
-D^* (z) =log ~\frac{P_{XG}(z)}{P_{XY}(z)} = log ~r(z)\label{eq:C_second}
+D^* (z) =log ~\frac{P_{XG}(z)}{P_{XY}(z)} = log ~r(z)
 
 \tag{C.2}
 
@@ -471,7 +467,7 @@ $$
 $$
 \begin{align}
 
-\mathbb{L}(G) = \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [log ~r(X,G(\eta, X))]\label{eq:C_third}
+\mathbb{L}(G) = \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [log ~r(X,G(\eta, X))]
 
 \tag{C.3}
 
@@ -485,7 +481,7 @@ $$
 $$
 \begin{align}
 
-G^\star (\eta, X) \sim P_{Y \vert X=x}, x \in \mathcal{X}\label{eq:C_fourth}
+G^\star (\eta, X) \sim P_{Y \vert X=x}, x \in \mathcal{X}
 
 \tag{C.4}
 
@@ -499,7 +495,7 @@ $$
 
 $$
 \begin{align}
-\mathbb{\hat{L}}(G) &= \underset{D_\phi \in \mathcal{D}} {sup} \mathcal{\hat{L}} (G,D)\label{eq:C_fifth}
+\mathbb{\hat{L}}(G) &= \underset{D_\phi \in \mathcal{D}} {sup} \mathcal{\hat{L}} (G,D)
 
 \tag{C.5}
 
@@ -507,14 +503,14 @@ $$
 
 
 
-\hat{G}_\theta \in arg &~min _ {G_\theta \in \mathcal{G}} \hat{\mathcal{L}}(G_\theta , \hat{D_\phi})\label{eq:C_sixth}
+\hat{G}_\theta \in arg &~min _ {G_\theta \in \mathcal{G}} \hat{\mathcal{L}}(G_\theta , \hat{D_\phi})
 
 \tag{C.6}
 
 
 \\
 
-\hat{D}_\phi \in arg &~min _ {D_\phi \in \mathcal{D}} \hat{\mathcal{L}}(\hat{G_\theta} , {D_\phi})\label{eq:C_seventh}
+\hat{D}_\phi \in arg &~min _ {D_\phi \in \mathcal{D}} \hat{\mathcal{L}}(\hat{G_\theta} , {D_\phi})
 
 \tag{C.7}
 
@@ -579,7 +575,7 @@ $$
 $$
 \begin{align}
 
-{ \large \mathbb{E}_{(X_i, Y_i , \eta_i)_{i=1}^n } \vert \vert p_{X, \hat{G}_\theta (\eta, X)} - p_{X,Y} \vert \vert _{L_1}^2 \rightarrow 0 , ~~as ~n \rightarrow 0 }\label{eq:C_eighth}
+{ \large \mathbb{E}_{(X_i, Y_i , \eta_i)_{i=1}^n } \vert \vert p_{X, \hat{G}_\theta (\eta, X)} - p_{X,Y} \vert \vert _{L_1}^2 \rightarrow 0 , ~~as ~n \rightarrow 0 }
 
 \tag{C.8}
 
@@ -605,7 +601,7 @@ Pinsker's theorem과 $\mathbb{L} (G^\star) =0$에 의해 $ \vert \vert p_{X, \ha
 
 $$
 \begin{align}
-\vert \vert p_{X, \hat{G}_\theta (\eta, X)} - p_{X,Y} \vert \vert _{L_1}^2 \leq 2(\mathbb{L}(\hat{G}) - \mathbb{L}(G^*)) \label{eq:C_ninth}
+\vert \vert p_{X, \hat{G}_\theta (\eta, X)} - p_{X,Y} \vert \vert _{L_1}^2 \leq 2(\mathbb{L}(\hat{G}) - \mathbb{L}(G^*)) 
 
 \tag{C.9}
 
@@ -630,42 +626,42 @@ $$
 
 $$
 \begin{align}
-\mathbb{L}(\hat{G}) - \mathbb{L}(G^\star) &= \underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D) \label{eq:C_tenth}
+\mathbb{L}(\hat{G}) - \mathbb{L}(G^\star) &= \underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D) 
 
 \tag{C.10}
 
 
 
 \\
-&+ \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D)  - \underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\hat{G},D) \label{eq:C_eleventh}
+&+ \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D)  - \underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\hat{G},D) 
 
 \tag{C.11}
 
 
 
 \\
-& +\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\hat{G},D)-\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\bar{G},D)\label{eq:C_twelveth}
+& +\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\hat{G},D)-\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\bar{G},D)
 
 \tag{C.12}
 
 
 
 \\
-& +\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\bar{G},D)-\underset{D\in \mathcal{D}}{sup} \mathcal{L}(\bar{G},D) \label{eq:C_thirthteenth}
+& +\underset{D\in \mathcal{D}}{sup} \mathcal{\hat{L}}(\bar{G},D)-\underset{D\in \mathcal{D}}{sup} \mathcal{L}(\bar{G},D) 
 
 \tag{C.13}
 
 
 
 \\&+
-\underset{D\in \mathcal{D}}{sup} \mathcal{L}(\bar{G},D) - \underset{D}{sup} \mathcal{L}(\bar{G},D)\label{eq:C_fourteenth}
+\underset{D\in \mathcal{D}}{sup} \mathcal{L}(\bar{G},D) - \underset{D}{sup} \mathcal{L}(\bar{G},D)
 
 \tag{C.14}
 
 
 
 
-\\ &+ \underset{D}{sup} \mathcal{L}(\bar{G},D) - \underset{D}{sup} \mathcal{L}(G^\star,D)\label{eq:C_fifteenth}
+\\ &+ \underset{D}{sup} \mathcal{L}(\bar{G},D) - \underset{D}{sup} \mathcal{L}(G^\star,D)
 
 \tag{C.15}
 
@@ -757,17 +753,19 @@ $$
 
 
 <details>
-    <summary><b>proof of error3 </b></summary>
+
+<summary><b>proof of error3 </b></summary>
+
 <b> Lemma B.1. </b> 
 $$
-\begin{align}
+\begin{align}\triangle_3 \equiv inf_{\bar{G} \in \mathcal{G}} [\mathbb{L}(\bar{G}) - \mathbb{L}(G^\star )] = o(1), ~~as ~~n \rightarrow \infty
 
-\triangle_3 \equiv inf_{\bar{G} \in \mathcal{G}} [\mathbb{L}(\bar{G}) - \mathbb{L}(G^\star )] = o(1), ~~as ~~n \rightarrow \infty
-\label{eq:D_first}
 
 \tag{D.1.}
 \end{align}
 $$
+
+
 <br>
 
 <br>
@@ -776,17 +774,21 @@ $$
 
 
 
-$L= log \, n ,~N = \frac{n^{\frac{d+m}{2(2+d+m)}}}{log \, n} ~, E=E_1 ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 \eqref{eq:D_second}를 만족하는 ReLU network $\bar{G}_\bar{\theta} \in \mathcal{G}$를 찾을 수 있다. 
+$L= log \, n ,~N = \frac{n^{\frac{d+m}{2(2+d+m)}}}{log \, n} ~, E=E_1 ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 <b>(D.2.)</b>를 만족하는 ReLU network $\bar{G}_\bar{\theta} \in \mathcal{G}$를 찾을 수 있다.
+
+<bR>
 $$
 \begin{align}
 
-\vert \vert G^\star - \bar{G}_\bar{\theta} \vert \vert_{L^\infty (E_1)} \leq 19 \sqrt{d+m} \omega_F^{E_1} (2 (log \, n) n^{\frac{-1}{2+d+m}}) \label{eq:D_second}
+\vert \vert G^\star - \bar{G}_\bar{\theta} \vert \vert_{L^\infty (E_1)} \leq 19 \sqrt{d+m} \omega_F^{E_1} (2 (log \, n) n^{\frac{-1}{2+d+m}}) 
 
 \tag{D.2.}
 
 
 \end{align}
 $$
+<bR>
+
 , 이때, $\bar{G}_\bar{\theta}$는 $depth ~~\mathcal{H} = 12log\,n +14 +2(d+m)$,
 
 <Br>
@@ -813,17 +815,43 @@ $size ~~\mathcal{S} = \frac{n^{\frac{d+m-2}{d+m+2}}}{log^4 n}$
 
 $\vert \vert D^* - \bar{D}\vert \vert \rightarrow 0 $ 역시 만족된다. 
 
+<bR>
 
 
 
+따라서, 
 
-따라서,
+<bR>
 $$
-\mathbb{L} (\bar{G}) = \underset{D}{sup} \mathcal{L}(\bar{G} ,D) =  \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [\bar{D}(X,\bar{G}(\eta, X))] - \mathbb{E} _ {(X, Y) \sim P_{X,Y}}[exp(\bar{D}(X,Y)] 
+\mathbb{L} (\bar{G}) = \underset{D}{sup} \mathcal{L}(\bar{G} ,D) =  \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [\bar{D}(X,\bar{G}(\eta, X))] - \mathbb{E} _ {(X, Y) \sim P_{X,Y}}[exp(\bar{D}(X,Y)]
 $$
+<BR>
+
 는 $n \rightarrow \infty$에 따라
+
+<bR>
 $$
 \mathbb{L} (G^\star) = \underset{D}{sup} \mathcal{L}(G^\star ,D) =  \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [D^\star(X,G^\star(\eta, X))] - \mathbb{E} _ {(X, Y) \sim P_{X,Y}}[exp(D^\star(X,Y)]
+$$
+
+
+예 수렴한다.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+$$
+
+$$
+
 $$
 에 수렴한다. 
 
