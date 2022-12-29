@@ -151,7 +151,7 @@ Same example with above one.
 
 
 
-If $f_n(x)$ converges uniformly, then the limit function must be $f(x) =0$ for $x \in [0,1)$ and $f(1) = 1$. Uniform convergence implies that for any $\epsilon >0 $ there is  $N_\epsilon \in \mathbb{N}$ such that $\vert x^n - f(x)|$ for all $n \geq N_\epsilon$ . Then, consier $\epsilon = \frac{1}{2}$. Then, there is $N $ such that for all $n \geq N$, $\vert x^n - f(x) \vert < \frac{1}{2}$. If we choose $n=N$ and $x = (\frac{3}{4})^N$, $f(x) = 0 $ and thus
+If $f_n(x)$ converges uniformly, then the limit function must be $f(x) =0$ for $x \in [0,1)$ and $f(1) = 1$. Uniform convergence implies that for any $\epsilon >0 $ there is  $N_\epsilon \in \mathbb{N}$ such that $\vert x^n - f(x)\vert$ for all $n \geq N_\epsilon$ . Then, consier $\epsilon = \frac{1}{2}$. Then, there is $N $ such that for all $n \geq N$, $\vert x^n - f(x) \vert < \frac{1}{2}$. If we choose $n=N$ and $x = (\frac{3}{4})^N$, $f(x) = 0 $ and thus
 
 
 $$
