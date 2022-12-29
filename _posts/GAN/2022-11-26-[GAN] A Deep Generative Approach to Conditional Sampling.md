@@ -246,7 +246,7 @@ $$
 
 - 즉, error가 noise $\eta$에서 나왔다고 이해하면 이는 일반적인 generalized regression 문제와 동일해진다.
 
-- 예를 들여, $G(\eta, x) = G_0(x) + \eta$  ,  $E(\eta \vert X) =0$ 으로 이해하면, \eqref{eq:third}는 전형적인 nonparametric regression 문제와 동일해진다.
+- 예를 들여, $G(\eta, x) = G_0(x) + \eta$  ,  $E(\eta \vert X) =0$ 으로 이해하면, <b><i>(3)</i></b>는 전형적인 nonparametric regression 문제와 동일해진다.
 
   <br>
 
@@ -286,7 +286,7 @@ $$
 
 
 - 이는 $P_{T\vert X} = P_{Y\vert X} \quad \longleftrightarrow \quad P_{T\vert X}P_X = P_{Y\vert X}P_X $라는 사실에서 쉽게 알 수 있다.
-- 따라서, \eqref{eq:fourth}를 만족하는 $G$를 찾는다면, 이는 우리가 추정하고자 하는 conditional distribution이며, Monte Carlo 기법 등을 통해 $P_{Y \vert X=x}$의 summary measures 역시 추정할 수 있다. 
+- 따라서, <b><i>(4)</i></b>를 만족하는 $G$를 찾는다면, 이는 우리가 추정하고자 하는 conditional distribution이며, Monte Carlo 기법 등을 통해 $P_{Y \vert X=x}$의 summary measures 역시 추정할 수 있다. 
 
 $$
 \begin{align}
@@ -996,7 +996,7 @@ $\underset{D}{sup} \mathcal{L}(\hat{G},D)$는 <B> Lemma B.2.</B> 에 의해 $\ma
 
 error3의 증명 과정과 유사하게, 
 
-$L= log \, n ,~N = \frac{n^{\frac{d+q}{2(2+d+q)}}}{log \, n} ~, E=E_2  ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 \eqref{eq:D_ninth}를 만족하는 ReLU network $D_\hat{G} \in \mathcal{D}$를 찾을 수 있다. <Br>
+$L= log \, n ,~N = \frac{n^{\frac{d+q}{2(2+d+q)}}}{log \, n} ~, E=E_2  ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 <b><i>(D.9.)</i></b> 만족하는 ReLU network $D_\hat{G} \in \mathcal{D}$를 찾을 수 있다. <Br>
 $$
 \begin{align}
 
