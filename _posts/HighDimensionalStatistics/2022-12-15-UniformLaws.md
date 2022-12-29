@@ -23,9 +23,13 @@ last_modified_at : 2022-12-22
 
 <br>
 
+<details>
+
+​    
 
 
-<b> Summary about convergence </b>
+
+<summary>  Summary about convergence  </summary>
 
 
 - <b>  Pointwise Convergence</b> 
@@ -48,6 +52,8 @@ The sequence of functions are said to <b> converge pointwise </b> to the functio
 <br>
 
 i.e. <i> for each $x\in A$ and $\epsilon >0$, $\exists L = L(x, \epsilon)$  such that $d(f_n (x), (x)) \leq \epsilon , \quad \forall n \geq L$  </i>
+
+<br>
 
 <Br>
 
@@ -87,6 +93,8 @@ $$
 
 <br>
 
+<Br>
+
 consider $X = \mathbb{R} $  and  $f_n (x) = \frac{1}{n} sin(n^2 x)$ . Then,
 
 <br>
@@ -109,6 +117,8 @@ and for most $x \in \mathbb{R}$, above derivative is unbounded, which means that
 
 <br>
 
+<Br>
+
 Consider $X= [0,1],$ and  $f_n (x) = \frac{2 n^2 x}{(1+n^2 x^2)^2}.$ Then,
 
 <br>
@@ -129,7 +139,7 @@ Therfore, even thought $lim_{n \rightarrow =\infty} f_n (x) = 0$ for all $x \in 
 
 <b> 3. The limit of a pointwise convergent sequence of continuous functions does not have to be contuniuous</b>
 
-<Br>
+<Br><br>
 
 $A = [ 0, 1]$  and  $f_n(x) = x^n $. Then, 
 
@@ -146,7 +156,7 @@ It satisfies pointwise convegence, but limit is not continuous
 
 <b> 4. The uniform convergence implies pointwise convergence, but not the other way around. </b> 
 
-<br>
+<br><Br>
 
 Same example with above one.
 
@@ -164,7 +174,7 @@ contradicting our assumption.
 
 
 
-
+</details>
 
 ## 1. Motivation
 
