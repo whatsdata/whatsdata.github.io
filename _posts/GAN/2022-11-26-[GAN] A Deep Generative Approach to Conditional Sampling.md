@@ -833,9 +833,7 @@ $$
 $$
 \mathbb{L} (G^\star) = \underset{D}{sup} \mathcal{L}(G^\star ,D) =  \mathbb{E} _ {(X, \eta) \sim P_X P_\eta} [D^\star(X,G^\star(\eta, X))] - \mathbb{E} _ {(X, Y) \sim P_{X,Y}}[exp(D^\star(X,Y)]
 $$
-
-
-예 수렴한다.
+에 수렴한다.
 
 </details>
 
@@ -953,28 +951,22 @@ $$
 \end{align}
 $$
 
-
+또한 위의 definition 하에서 neural network $G,D$에 대해 다음이 만족된다.<br>
 $$
-<br>
-
-또한 위의 definition 하에서 neural network $G,D$에 대해 다음이 만족된다. 
+og \mathscr{C}  (\mathcal{D} , e_{n,\infty} , \delta ) \leq \mathcal{P}dim_\mathcal{G}~log \frac{2e \mathcal{B}n}{\mathcal{P}dim_\mathcal{G}}
 $$
-log \mathscr{C}  (\mathcal{D} , e_{n,\infty} , \delta ) \leq \mathcal{P}dim_\mathcal{G}~log \frac{2e \mathcal{B}n}{\mathcal{P}dim_\mathcal{G}}
+$\mathcal{P}dim$은 PseudoDimension 이며, 다음을 만족한다.<br>
 $$
-$\mathcal{P}dim$은 PseudoDimension 이며, 다음을 만족한다.
-$$
-
 C_7 \mathcal{H}\mathcal{S} log \mathcal{S} \leq\mathcal{P}dim \leq C_8 \mathcal{H}\mathcal{S} log \mathcal{S}
 $$
-따라서,  \eqref{eq:D_sixth} 는 다음을 따름을 보일 수 있다. 
+
+따라서,  <b> (D.6.) </b>는 다음을 따름을 보일 수 있다.<Br>
 $$
 C_6 \frac{1}{\sqrt{n}}\left[ log \scr{C}  (\mathcal{D} , e_{n,\infty} , \delta ) + log \scr{C}  (\cal{G} , e_{n,\infty} , \delta )\right]^{1/2} \leq C_9 \frac{1}{\sqrt{n}}\left[ \mathcal{H}\mathcal{S} log \,\mathcal{S} log \frac{\mathcal{B} n }{\mathcal{H}\mathcal{S} log \,\mathcal{S}} + \mathcal{\tilde{H}}\mathcal{\tilde{S}} log \,\mathcal{\tilde{S}} log \frac{\mathcal{\tilde{B}} n }{\mathcal{\tilde{H}} \mathcal{\tilde{S}} log \,\mathcal{\tilde{S}}} \right]^{1/2}
 $$
-위의 결과를 정리 후 N1, N2 가정과 $\delta= \frac{1}{n}$을 가정 시 다음 결과에 도달한다. 
+위의 결과를 정리 후 N1, N2 가정과 $\delta= \frac{1}{n}$을 가정 시 다음 결과에 도달한다.<bR>
 $$
-\underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert   \leq 2 \left(2 \delta + C_9 \frac{1}{\sqrt{n}}\left[ \mathcal{H}\mathcal{S} log \,\mathcal{S} log \frac{\mathcal{B} n }{\delta \mathcal{H}\mathcal{S} log \,\mathcal{S}} + \mathcal{\tilde{H}}\mathcal{\tilde{S}} log \,\mathcal{\tilde{S}} log \frac{\mathcal{\tilde{B}} n }{\delta \mathcal{\tilde{H}} \mathcal{\tilde{S}} log \,\mathcal{\tilde{S}}} \right]^{1/2} \right) \rightarrow 0 \label{eq:D_seventh}
-
-\tag{D.7.}
+\underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert   \leq 2 \left(2 \delta + C_9 \frac{1}{\sqrt{n}}\left[ \mathcal{H}\mathcal{S} log \,\mathcal{S} log \frac{\mathcal{B} n }{\delta \mathcal{H}\mathcal{S} log \,\mathcal{S}} + \mathcal{\tilde{H}}\mathcal{\tilde{S}} log \,\mathcal{\tilde{S}} log \frac{\mathcal{\tilde{B}} n }{\delta \mathcal{\tilde{H}} \mathcal{\tilde{S}} log \,\mathcal{\tilde{S}}} \right]^{1/2} \right) \rightarrow 0 \tag{D.7.}
 $$
 </details>
 
@@ -982,16 +974,14 @@ $$
 
 
 
-
-
 <details>
-    <summary> <b> proof of error1 </b></summary>
 
+<summary> <b> proof of error1 </b></summary>
 
-<b> Lemma B.3. </b>
+<b> Lemma B.3. </b><Br>
 $$
 \begin{align}
-\mathbb{E}_{(X_i ,Y_i, \eta_i )_{i=1}^n } [ \triangle_1 ] \equiv \mathbb{E}_{(X_i ,Y_i, \eta_i )_{i=1}^n } [\underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D)] \rightarrow 0\label{eq:D_eighth}
+\mathbb{E}_{(X_i ,Y_i, \eta_i )_{i=1}^n } [ \triangle_1 ] \equiv \mathbb{E}_{(X_i ,Y_i, \eta_i )_{i=1}^n } [\underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D)] \rightarrow 0
 
 \tag{D.8.}
 
@@ -1008,11 +998,7 @@ $\underset{D}{sup} \mathcal{L}(\hat{G},D)$는 <B> Lemma B.2.</B> 에 의해 $\ma
 
 error3의 증명 과정과 유사하게, 
 
-
-
-
-
-$L= log \, n ,~N = \frac{n^{\frac{d+q}{2(2+d+q)}}}{log \, n} ~, E=E_2  ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 \eqref{eq:D_ninth}를 만족하는 ReLU network $D_\hat{G} \in \mathcal{D}$를 찾을 수 있다.
+$L= log \, n ,~N = \frac{n^{\frac{d+q}{2(2+d+q)}}}{log \, n} ~, E=E_2  ,~ R=B $로 보면, <b> Lemma B.5. </b>에 의해 아래 \eqref{eq:D_ninth}를 만족하는 ReLU network $D_\hat{G} \in \mathcal{D}$를 찾을 수 있다. <Br>
 $$
 \begin{align}
 
@@ -1043,12 +1029,11 @@ $size ~~\tilde{\mathcal{S}} = \frac{n^{\frac{d+q-2}{d+q+2}}}{log^4 n}$
 
 <br>
 
-따라서, continuity에 의해,
+따라서, continuity에 의해,<br>
 $$
 0<\underset{D}{sup} \mathcal{L}(\hat{G},D) -  \underset{D\in \mathcal{D}}{sup} \mathcal{L}(\hat{G},D) \leq \mathcal{L}(\hat{G},D_{\hat{G}} ) - \mathcal{L} (\hat{G} - \hat{D}_\phi) \rightarrow 0
 $$
-가 성립한다. 
-
+가 성립한다.
 
 </details>
 
