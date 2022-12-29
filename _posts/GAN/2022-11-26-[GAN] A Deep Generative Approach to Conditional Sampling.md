@@ -841,40 +841,26 @@ $$
 
 
 
-
-
-
-
-
-
-
-$$
-
-$$
-
-$$
-에 수렴한다. 
-
-
-
-</details>
-
 ---
 
 
 
 <details>
-    <summary><B>proof of error2</B></summary>
-<B> Lemma B.2. </B>
+
+<summary><B>proof of error2</B></summary>
+
+ <B> Lemma B.2. </B> <bR>
 $$
 \begin{align}
-\triangle_2 \equiv \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert \leq \mathcal{O} (n^{\frac{-2}{2+d+m}} +n^{\frac{-2}{2+d+q}}  ) \label{eq:D_third}
+\triangle_2 \equiv \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert \leq \mathcal{O} (n^{\frac{-2}{2+d+m}} +n^{\frac{-2}{2+d+q}}  ) 
 
 \tag{D.3.}
 
 
 \end{align}
 $$
+<BR>
+
 <b> proof) </b> 
 
 다음과 같은 노테이션을 정한다.
@@ -908,44 +894,47 @@ $$
 
 <Br>
 
-- $\epsilon_i , ~~i = 1, \cdots ,n $ 를 $S_i$와 독립인  Rademacher 확률변수라고 하면, Rademacher complexity of $\mathcal{D} \times \mathcal{G}$를 다음과 같이 정의한다.
+- $\epsilon_i , ~~i = 1, \cdots ,n $ 를 $S_i$와 독립인  Rademacher 확률변수라고 하면, Rademacher complexity of $\mathcal{D} \times \mathcal{G}$를 다음과 같이 정의한다. <Br>
+
 $$
 \begin{align}
 
-\mathcal{C}(\mathcal{D} \times \mathcal{G}) = \frac{1}{n} \mathbb{E}_{\{S_i, \epsilon_i\}_{i=1} ^n } \left[ \underset{G \in \mathcal{G}, D\in \mathcal{D} }{sup} \left\vert \sum_{i=1}^n \epsilon_i b(G,D, ;S) \right\vert \right] \label{eq:D_fourth}
+\mathcal{C}(\mathcal{D} \times \mathcal{G}) = \frac{1}{n} \mathbb{E}_{\{S_i, \epsilon_i\}_{i=1} ^n } \left[ \underset{G \in \mathcal{G}, D\in \mathcal{D} }{sup} \left\vert \sum_{i=1}^n \epsilon_i b(G,D, ;S) \right\vert \right] 
 
 \tag{D.4.}
 
 
 \end{align}
 $$
-<br>이제, symmetrization technique과 law of iterated expectation을 이용하면 다음을 보일 수 있다.
+<br>이제, symmetrization technique과 law of iterated expectation을 이용하면 다음을 보일 수 있다.  <Br>
+
+
 $$
 \begin{align}
 
 &\underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathcal{L} (G,D) - \hat{\mathcal{L}}(G,D) \vert  \\
 
-&= \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathbb{E}_S b(G,D,S)- \frac{1}{n} \sum_{i=1}^n b(G,D; S_i') \vert ~~\longleftarrow  S_i'~ ~is~~i.i.d. ~~copy~~of~~S_i \\
+&= \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \vert \mathbb{E}_S b(G,D,S)- \frac{1}{n} \sum_{i=1}^n b(G,D; S_i') \vert ~~\longleftarrow  S_i'\,\,\,is\,\,\,i.i.d. \,\,\,copy\,\,\,of\,\,\,S_i \\
 &=\underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \left\vert \mathbb{E}_S \left[\frac{1}{n}\sum_{i=1}^n (b(G,D,S_i )- 
 b(G,D; S_i'))\right] \right\vert \\
 & \leq \mathbb{E}_{S,S'} \left[ \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \left\vert  \frac{1}{n}\sum_{i=1}^n (b(G,D,S_i )- b(G,D; S_i')) \right\vert \right] \\
 &= \mathbb{E}_{S,S', \epsilon} \left[ \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \left\vert  \frac{1}{n}\sum_{i=1}^n \epsilon_i (b(G,D,S_i )- b(G,D; S_i')) \right\vert \right]  \\
 &\leq 2\mathbb{E}_{S, \epsilon} \left[ \underset{D \in \mathcal{D} ,G \in \mathcal{G}}{sup} \left\vert  \frac{1}{n}\sum_{i=1}^n \epsilon_i b(G,D,S_i ) \right\vert \right] \\
 &= 2\mathcal{C}(\mathcal{D} \times \mathcal{G})\\ 
-&= 2 \mathbb{E}_{S_1, \cdots, S_n} \left\{ \mathbb{E}_{\epsilon_1 , \cdots, \epsilon_n} \left[ \underset{G \in \mathcal{G}, D\in \mathcal{D} }{sup} \left\vert \frac{1}{n}\sum_{i=1}^n \epsilon_i b(G,D, ;S_i) \right\vert \vert S_1 , \cdots, S_n \right] \right\} \label{eq:D_fifth}
+&= 2 \mathbb{E}_{S_1, \cdots, S_n} \left\{ \mathbb{E}_{\epsilon_1 , \cdots, \epsilon_n} \left[ \underset{G \in \mathcal{G}, D\in \mathcal{D} }{sup} \left\vert \frac{1}{n}\sum_{i=1}^n \epsilon_i b(G,D, ;S_i) \right\vert \vert S_1 , \cdots, S_n \right] \right\} 
 
 \tag{D.5.}
 
 
 \end{align}
 $$
-<Br>
-
-어떤 $\delta >0$에 대하여, $\mathcal{D}_{\delta} \times \mathcal{G}_{\delta}$ 를 $\mathcal{D}  \times \mathcal{G}$의 $\delta - cover$라 하고, $\scr{C}(\cal{D} \times \cal{G}, e_{n,1}, \delta )$를 다음의 empirical distnace $e_{n,1}$을 distance로 가지는 covering set이라고 하면,
+<Br>어떤 $\delta >0$에 대하여, $\mathcal{D}_{\delta} \times \mathcal{G}_{\delta}$ 를 $\mathcal{D}  \times \mathcal{G}$의 $\delta - cover$라 하고, $\scr{C}(\cal{D} \times \cal{G}, e_{n,1}, \delta )$를 다음의 empirical distnace $e_{n,1}$을 distance로 가지는 covering set이라고 하면, <br>
 $$
 e_{n,1}((G,D), (\tilde{G}, \tilde{D})) = \frac{1}{n} \mathbb{E}_\epsilon \left[ \sum_{i=1}^n \left\vert\epsilon_i (b(G,D;S_i) - b(\tilde{G}, \tilde{D}; S_i)) \right\vert\right]
 $$
-또한, 가정 A1, A2에 의해 $b(G,D;S_i)$ 가 어떤 수에 의해 bounded 되므로, $b(G,D;S_i) < C_4$라 하고, <b> Lemma B.4. </b>와 함께 적용 시 다음 결과를 얻을 수 있다. 
+<br>
+
+또한, 가정 A1, A2에 의해 $b(G,D;S_i)$ 가 어떤 수에 의해 bounded 되므로, $b(G,D;S_i) < C_4$라 하고, <b> Lemma B.4. </b>와 함께 적용 시 다음 결과를 얻을 수 있다.<br>
 $$
 \begin{align}
 
@@ -956,12 +945,15 @@ $$
 
 & \leq 2 \delta + C_5 \frac{1}{n}\mathbb{E}_{S_1 ,\cdots ,S_n } \left\{ \left[ log \scr{C}  (\mathcal{D} \times \cal{G} , e_{n,1} , \delta )\right]^{1/2} \sqrt{n}C_4 \right\} ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\longleftarrow ~~by~~\left[ \sum_{i=1}^n b^2(G,D ; S_i)\right]^{1/2} \leq \sqrt{n}C_4 \\
 &\leq2 \delta + C_6 \frac{1}{\sqrt{n}} \left[ log \scr{C}  (\mathcal{D} , e_{n,1} , \delta ) + log \scr{C}  (\cal{G} , e_{n,1} , \delta )\right]^{1/2}  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\longleftarrow ~~ by ~~definition ~~of~~covering~~\delta - cover\\
-&\leq 2\delta + C_6 \frac{1}{\sqrt{n}} \left[ log \scr{C}  (\mathcal{D} , e_{n,\infty} , \delta ) + log \scr{C}  (\cal{G} , e_{n,\infty} , \delta )\right]^{1/2}~~~~~~~~~~~~~~~~~~~~~~~~~~~\longleftarrow ~~by ~~e_{n,\infty} \leq e_{n,1} \label{eq:D_sixth}
+&\leq 2\delta + C_6 \frac{1}{\sqrt{n}} \left[ log \scr{C}  (\mathcal{D} , e_{n,\infty} , \delta ) + log \scr{C}  (\cal{G} , e_{n,\infty} , \delta )\right]^{1/2}~~~~~~~~~~~~~~~~~~~~~~~~~~~\longleftarrow ~~by ~~e_{n,\infty} \leq e_{n,1}
 
 \tag{D.6.}
 
 
 \end{align}
+$$
+
+
 $$
 <br>
 
