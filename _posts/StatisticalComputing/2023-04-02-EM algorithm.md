@@ -1,7 +1,7 @@
 ---
 layout : single
 title : '[Statistical Computing] EM algorithm'
-categories : 'StatisticalComputing'
+categories : 'Statistical Computing'
 sidebar_main : true
 tag : ['stat', 'EM algorithm']
 toc : true
