@@ -91,7 +91,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Statistical Computing" %}
+                    {% if category[0] == "StatisticalComputing" %}
                         <li><a href="/categories/StatisticalComputing" class="">Statistical Computing({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
