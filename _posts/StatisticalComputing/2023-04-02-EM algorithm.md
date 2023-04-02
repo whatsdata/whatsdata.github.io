@@ -7,7 +7,6 @@ tag : ['stat', 'EM algorithm']
 toc : true
 date: 2023-04-02
 last_modified_at : 2023-04-02
-
 ---
 
 ><b>References </b>
