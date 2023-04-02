@@ -4,7 +4,7 @@ title : '[Statistical Computing] EM algorithm'
 categories : 'StatisticalComputing'
 sidebar_main : true
 tag : ['stat', 'EM algorithm']
-toc : false
+toc : true
 date: 2023-04-02
 last_modified_at : 2023-04-02
 
@@ -79,4 +79,4 @@ $$
 
 - 여기에 Log를 씌우면 다음과 같다. 
 
-  $$ l(\theta \vert y_{obs}) = l( \theta \vert y_{com}) - log \big( p(y_{mis} )\vert y_{obs}, \theta )  \big) $$
+  $$ l(\theta \vert y_{obs}) = l( \theta \vert y_{com}) - log \big( p(y_{mis} )\vert y_{obs}, \theta )  \big) $$
