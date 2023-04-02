@@ -4,10 +4,9 @@ title : '[Statistical Computing] EM algorithm'
 categories : 'StatisticalComputing'
 sidebar_main : true
 tag : ['stat', 'EM algorithm']
-toc : true
+toc : false
 date: 2023-04-02
 last_modified_at : 2023-04-02
-
 
 ---
 
@@ -71,6 +70,11 @@ $$
 **Proof)**
 
 - Complete data likelihood는 다음과 같이 분해된다.
-$$p(y_{com} \vert \theta) = p(y_{obs}, y_{mis} \vert \theta) = p(y_{obs})$$
-여기에 Log를 씌우면 다음과 같다. 
-$$ l(\theta \vert y_{obs}) = l\lparen \theta \vert y_{com}) - log \big\lparen p(y_{mis} )\vert y_{obs}, \theta )  \big\rparen $$
+
+  $$p(y_{com} \vert \theta) = p(y_{obs}, y_{mis} \vert \theta) = p(y_{obs})$$
+
+
+
+- 여기에 Log를 씌우면 다음과 같다. 
+
+  $$ l(\theta \vert y_{obs}) = l\lparen \theta \vert y_{com}) - log \big( p(y_{mis} )\vert y_{obs}, \theta )  \big) $$
