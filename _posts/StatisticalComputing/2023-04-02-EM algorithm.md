@@ -48,6 +48,8 @@ last_modified_at : 2023-04-02
 
 
 
+
+
 - 위의 steps를 따라가면 EM algorithm을 통해 Log-likelihood function을 극대화하는 $\theta$에 근접할수 있다는 것은 다음의 Ascent property를 통해 알 수 있다.
 
 
@@ -77,4 +79,4 @@ $$
 
 - 여기에 Log를 씌우면 다음과 같다. 
 
-  $$ l(\theta \vert y_{obs}) = l\lparen \theta \vert y_{com}) - log \big( p(y_{mis} )\vert y_{obs}, \theta )  \big) $$
+  $$ l(\theta \vert y_{obs}) = l( \theta \vert y_{com}) - log \big( p(y_{mis} )\vert y_{obs}, \theta )  \big) $$

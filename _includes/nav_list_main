@@ -84,17 +84,24 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "HighDimensionalStatistics" %}
-                        <li><a href="/categories/HighDimensionalStatistics" class="">High Dimensional Statistics({{category[1].size}})</a></li>
+                    {% if category[0] == "LinearModel" %}
+                        <li><a href="/categories/LinearModel" class="">Linear Model ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %} 
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "StatisticalComputing" %}
+                        <li><a href="/categories/StatisticalComputing" class="">Statistical Computing({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "LinearModel" %}
-                        <li><a href="/categories/LinearModel" class="">Linear Model ({{category[1].size}})</a></li>
+                    {% if category[0] == "HighDimensionalStatistics" %}
+                        <li><a href="/categories/HighDimensionalStatistics" class="">High Dimensional Statistics({{category[1].size}})</a></li>
                     {% endif %}
-                {% endfor %} 
+                {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
